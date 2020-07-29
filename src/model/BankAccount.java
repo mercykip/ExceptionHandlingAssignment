@@ -11,6 +11,7 @@ public class BankAccount {
     public double balance;
       Date date;
 
+
     public BankAccount() throws DateValidationException{
         this.setDate(new Date());
     }
@@ -65,11 +66,12 @@ public class BankAccount {
     }
     //Validating date
     public void setDate(Date date) throws DateValidationException {
+        this.date = date;
         Date date1=new Date();
-        if(!date1.equals(date)){
+        if(!date1.equals(date)){//To Do
             throw new DateValidationException();
         }
-        this.date = date;
+
     }
     public double getBalance() {
         return balance;

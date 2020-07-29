@@ -17,7 +17,7 @@ public class CheckingAccount extends SavingAccount{
     @Override
     public void calculateInterest() throws NegativeBalanceException {
         this.setBalance(this.getBalance()+(0.75*this.getBalance()*12));
-        System.out.println("Added interest and updated Balance");
+        System.out.println("Added interest and updated Balance\n" +this.getBalance());
     }
 
     @Override
